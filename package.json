@@ -1,7 +1,7 @@
 {
   "name": "direct-construction",
   "version": "1.0.0",
-  "description": "construction personal website",
+  "description": "construction website",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss style/main.css -w"
@@ -10,13 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/zerobug110/direct-construction.git"
   },
+  "keywords": [
+    "construction",
+    "building"
+  ],
   "author": "Muhammed Bojang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zerobug110/direct-construction/issues"
   },
   "homepage": "https://github.com/zerobug110/direct-construction#readme",
-  "dependencies": {
-    "sass": "^1.26.10"
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }
