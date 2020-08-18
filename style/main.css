@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 1fr [full-end];
+  grid-template-rows: repeat(9, 100vh); }
+
+.header {
+  background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.705), rgba(109, 174, 254, 0.705)), url(../images/projects18.jpg);
+  background-size: cover;
+  background-position: top;
+  grid-column: full-start / full-end;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  display: grid;
+  grid-template-columns: 1fr [full-start content-start] 5rem repeat(8, minmax(min-content, 14rem)) 5rem [content-end] 1fr [full-end]; }
+
+.nav {
+  grid-column: content-start / content-end;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem; }
+  .nav__logo {
+    width: 3rem;
+    height: 3rem; }
+  .nav__items {
+    color: #fff;
+    display: flex; }
+  .nav__list {
+    font-size: 1.6rem;
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none; }
+  .nav__link a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; }
+
+.about {
+  grid-column: full-start / full-end; }
+
+.services {
+  background-color: blue;
+  grid-column: full-start / full-end; }
+
+.work-matters {
+  background-color: crimson;
+  grid-column: full-start / full-end; }
+
+.team {
+  background-color: darkgoldenrod;
+  grid-column: full-start / full-end; }
+
+.hire-us {
+  background-color: grey;
+  grid-column: full-start / full-end; }
+
+.testimony {
+  background-color: green;
+  grid-column: full-start / full-end; }
+
+.partners {
+  background-color: pink;
+  grid-column: full-start / full-end; }
+
+.footer {
+  background-color: brown;
+  grid-column: full-start / full-end; }

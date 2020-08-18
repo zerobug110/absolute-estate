@@ -1,0 +1,46 @@
+.header {
+    background-image: linear-gradient(to bottom right, 
+        rgba(69, 125, 247, 0.705),
+        rgba(109, 174, 254, 0.705)),
+        url(../images/projects18.jpg); 
+    background-size: cover;
+    background-position: top;
+    grid-column: full-start / full-end;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    display: grid;
+    grid-template-columns: 1fr [full-start content-start]5rem repeat(8, minmax(min-content, 14rem))5rem[content-end] 1fr[full-end];
+}
+.nav{
+    grid-column: content-start / content-end;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+
+    &__logo {
+        width: 3rem;
+        height: 3rem;
+    }
+    &__items {
+        color: $white;
+        display: flex;
+    }
+
+    &__list {
+        font-size: 1.6rem;
+        
+        width: 35rem;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__link a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+        
+    }
+}

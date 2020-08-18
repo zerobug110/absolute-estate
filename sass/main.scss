@@ -1,2 +1,13 @@
-@import "layouts/header.scss";
+@import "abstracts/mixins.scss";
+@import "abstracts/variable.scss";
 @import "base/base.scss";
+@import "abstracts/typography.scss";
+@import "layouts/header.scss";
+@import "layouts/about.scss";
+@import "layouts/services.scss";
+@import "layouts/work-matters.scss";
+@import "layouts/team.scss";
+@import "layouts/hire-us.scss";
+@import "layouts/testimony.scss";
+@import "layouts/partner.scss";
+@import "layouts/footer.scss";
