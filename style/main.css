@@ -16,7 +16,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 1fr [full-end];
+  grid-template-columns: [full-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr [full-end];
   grid-template-rows: repeat(9, 100vh); }
 
 .header {
@@ -24,12 +24,9 @@ body {
   background-size: cover;
   background-position: top;
   grid-column: full-start / full-end;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  display: grid;
-  grid-template-columns: 1fr [full-start content-start] 5rem repeat(8, minmax(min-content, 14rem)) 5rem [content-end] 1fr [full-end]; }
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
 
 .nav {
-  grid-column: content-start / content-end;
   height: 7rem;
   display: flex;
   justify-content: space-between;
@@ -52,8 +49,32 @@ body {
     text-decoration: none;
     color: #fff; }
 
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.main-heading {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4); }
+
+.primary-heading {
+  display: block;
+  font-size: 6rem;
+  font-weight: 500;
+  word-spacing: 1.5rem; }
+
+.sub-heading {
+  font-size: 2rem;
+  font-weight: 550;
+  color: #fff;
+  word-spacing: .2rem; }
+
 .about {
-  grid-column: full-start / full-end; }
+  grid-column: col-start 1 / col-end; }
 
 .services {
   background-color: blue;

@@ -8,11 +8,9 @@
     grid-column: full-start / full-end;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
-    display: grid;
-    grid-template-columns: 1fr [full-start content-start]5rem repeat(8, minmax(min-content, 14rem))5rem[content-end] 1fr[full-end];
 }
+
 .nav{
-    grid-column: content-start / content-end;
     height: 7rem;
     display: flex;
     justify-content: space-between;
@@ -43,4 +41,30 @@
         color: $white;
         
     }
+}
+
+.text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-heading {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 .1rem .2rem  rgba(0,0,0, .4);
+}
+.primary-heading {
+    display: block;
+    font-size: 6rem;
+    font-weight: 500;
+    word-spacing: 1.5rem;
+}
+.sub-heading {
+    font-size: 2rem;
+    font-weight: 550;
+    color: $white;
+    word-spacing: .2rem;
+
 }
