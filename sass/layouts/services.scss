@@ -1,4 +1,183 @@
 .services {
-    background-color: blue;
-    grid-column: full-start / full-end;
+    grid-column: col-start 1 / col-end;
+    margin-top: 10rem;
+
+    &__container {
+        margin: 3rem 0 10rem 0;
+        grid-column: col-start 1 / col-end;
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 3rem;
+    }
+
+    &__h2 {
+        color: $primary-color;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $white;
+        box-shadow: 0 .1rem .2rem rgba(0,0,0, .7);
+        background-color: $secondary-color;
+        border-radius: .2rem;
+        padding: 0 1rem;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    &__img-box {
+        height: 20rem;
+        border-radius: .3rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .2);
+        transition:  all .2s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-1{
+        background-image: linear-gradient( to right bottom,
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects25.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient( to right bottom,
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects25.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+    
+    .img-2{
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects2.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects2.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-3{
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects3.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects3.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-4{
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects4.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects4.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-5{
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects6.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects6.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-6{
+    background-image: linear-gradient(
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects7.jpg);
+    background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects7.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-7{
+        background-image: linear-gradient(
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+        url(../images/projects8.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects8.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-8{
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects9.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)),
+        url(../images/projects9.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
 }

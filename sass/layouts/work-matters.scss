@@ -1,4 +1,96 @@
 .work-matters {
-    background-color: crimson;
+    background-image: linear-gradient(
+        rgba(0, 0,0, 0.8),
+        rgba(0,0,0, 0.8)),
+        url(../images/projects23.jpg);
     grid-column: full-start / full-end;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
 }
+
+.work {
+    font-size: 1.6rem;
+    margin: 5rem 0;
+    grid-column: col-start 1 / col-end;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 15rem;
+
+    &__img-box {
+        height: 50rem;
+        display: grid;
+
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    &__img-1 {
+        width: 100%;
+        height: 100%; 
+        background-image: linear-gradient(to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+        url(../images/projects2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: .2rem;
+        
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 2;   
+    }
+
+    &__img-2 {
+        width: 100%;
+        height: 100%; 
+        background-image: linear-gradient(to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+        url(../images/projects17.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: .2rem;
+        box-shadow: 0 .5rem .8rem 0 rgba(0, 0,0, 0.8);
+
+        grid-column: 2 / span 5;
+        grid-row: 1 / -1;
+    }
+
+    &__img-3 {
+        width: 100%;
+        height: 100%;    
+        background-image: linear-gradient(to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+        url(../images/projects4.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: .2rem;
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0,0, 0.8);
+
+        grid-column: 5 / -1;
+        grid-row: 2 / span 3;
+    }
+
+    &__text-box {
+        
+      
+    }
+
+    &__heading {
+        color: $color-pink;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 3rem;
+
+    }
+
+    &__text {
+        color: $white;
+    }
+}
+

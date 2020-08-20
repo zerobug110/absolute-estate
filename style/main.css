@@ -16,8 +16,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr [full-end];
-  grid-template-rows: repeat(9, 100vh); }
+  grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
+  grid-template-rows: 100vh repeat(4, min-content); }
+
+.section-heading {
+  color: #437cf7;
+  font-size: 3rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin-top: -1.5rem; }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.705), rgba(109, 174, 254, 0.705)), url(../images/projects18.jpg);
@@ -74,23 +81,229 @@ body {
   word-spacing: .2rem; }
 
 .about {
-  grid-column: col-start 1 / col-end; }
+  grid-column: col-start 1 / col-end;
+  margin-top: 10rem;
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 10rem; }
+  .about__img-box {
+    height: 30rem;
+    background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.39), rgba(109, 174, 254, 0.39)), url(../images/projects2.jpg);
+    background-size: cover; }
+  .about__img {
+    width: 100%;
+    height: 100%;
+    border-radius: .2rem;
+    box-shadow: 0 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.2); }
+  .about__paragraph {
+    color: #666;
+    margin-bottom: 2rem; }
+  .about__btn {
+    background-color: #df4c73;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2rem; }
 
 .services {
-  background-color: blue;
-  grid-column: full-start / full-end; }
+  grid-column: col-start 1 / col-end;
+  margin-top: 10rem; }
+  .services__container {
+    margin: 3rem 0 10rem 0;
+    grid-column: col-start 1 / col-end;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem; }
+  .services__h2 {
+    color: #437cf7;
+    margin: 0 auto;
+    text-align: center; }
+  .services__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+    background-color: #6daffe;
+    border-radius: .2rem;
+    padding: 0 1rem; }
+  .services__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .services__img-box {
+    height: 20rem;
+    border-radius: .3rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .services .img-1 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects25.jpg);
+    background-size: cover; }
+    .services .img-1:hover {
+      background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects25.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-2 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects2.jpg);
+    background-size: cover; }
+    .services .img-2:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects2.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-3 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects3.jpg);
+    background-size: cover; }
+    .services .img-3:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects3.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-4 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects4.jpg);
+    background-size: cover; }
+    .services .img-4:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects4.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-5 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects6.jpg);
+    background-size: cover; }
+    .services .img-5:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects6.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-6 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects7.jpg);
+    background-size: cover; }
+    .services .img-6:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects7.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-7 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects8.jpg);
+    background-size: cover; }
+    .services .img-7:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects8.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
+  .services .img-8 {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects9.jpg);
+    background-size: cover; }
+    .services .img-8:hover {
+      background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects9.jpg);
+      background-size: cover;
+      transform: translateY(-0.3rem); }
 
 .work-matters {
-  background-color: crimson;
-  grid-column: full-start / full-end; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projects23.jpg);
+  grid-column: full-start / full-end;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+
+.work {
+  font-size: 1.6rem;
+  margin: 5rem 0;
+  grid-column: col-start 1 / col-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 15rem; }
+  .work__img-box {
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr); }
+  .work__img-1 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: .2rem;
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2; }
+  .work__img-2 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects17.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: .2rem;
+    box-shadow: 0 0.5rem 0.8rem 0 rgba(0, 0, 0, 0.8);
+    grid-column: 2 / span 5;
+    grid-row: 1 / -1; }
+  .work__img-3 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: .2rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.8);
+    grid-column: 5 / -1;
+    grid-row: 2 / span 3; }
+  .work__heading {
+    color: #df4c73;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 3rem; }
+  .work__text {
+    color: #fff; }
 
 .team {
-  background-color: darkgoldenrod;
-  grid-column: full-start / full-end; }
+  grid-column: col-start 1 / col-end; }
+  .team__heading {
+    text-align: center;
+    margin: 10rem 0 3rem 0; }
+
+.staffs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 10rem;
+  align-self: center; }
+
+.staff {
+  font-size: 1.6rem; }
+  .staff__img-box {
+    width: 15rem;
+    height: 15rem; }
+  .staff__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .staff__name {
+    font-size: 2rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #555;
+    margin-top: 1rem; }
+  .staff__role {
+    font-size: 2rem;
+    color: #437cf7;
+    text-transform: capitalize; }
+  .staff__info-box {
+    width: 20rem;
+    height: 25rem;
+    text-align: center;
+    border-radius: .2rem;
+    background-color: #fafbfa;
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .staff__info-box:hover {
+      background-color: #e2f0f9; }
 
 .hire-us {
   background-color: grey;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  margin-top: 10rem; }
 
 .testimony {
   background-color: green;
