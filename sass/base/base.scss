@@ -18,6 +18,12 @@ body {
     line-height: 1.6;
 }
 
+    a::before,
+    a::after,
+    a::visited {
+        text-decoration: none;
+    }
+
 .container {
     display: grid;
     grid-template-columns:  [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];

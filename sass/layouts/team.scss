@@ -9,8 +9,8 @@
 
 .staffs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
     align-self: center;
 }
 .staff { 
@@ -42,8 +42,8 @@
     }
 
     &__info-box {
-        width: 20rem;
-        height: 25rem;
+        width: 25rem;
+        height: 35rem;
         text-align: center;
         border-radius: .2rem;
         background-color: rgb(250, 251, 250);

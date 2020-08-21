@@ -1,0 +1,88 @@
+.latest-projects {
+    grid-column: col-start 1 / col-end;
+    margin-top: 10rem;
+
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+
+    &__box {
+        box-shadow: 0 .2rem .4rem rgba(0,0,0, .4);
+        text-decoration: none;
+        transition: all .2s;
+        
+        &:hover {transform: translateY(-.2rem);}
+    }
+
+    &__img-box {height: 25rem;}
+
+    &__h2 {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+    &__heading {
+        font-size: 2rem;
+        color: $white;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 1.5rem 0;
+        background-color: $color-pink;
+        margin-top: -.3rem;
+    }
+    
+    &__img-1 {
+        background-image: linear-gradient( to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects1.jpg);
+    background-size: cover;
+    }
+
+    &__img-2 {
+        background-image: linear-gradient( to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects2.jpg);
+    background-size: cover;
+    }
+
+    &__img-3 {
+        background-image: linear-gradient( to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects3.jpg);
+    background-size: cover;
+    }
+
+    &__img-4 {
+        background-image: linear-gradient( to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects4.jpg);
+    background-size: cover;
+    }
+
+    &__img-5 {
+        background-image: linear-gradient( to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects5.jpg);
+    background-size: cover;
+    }
+
+    &__img-6 {
+        background-image: linear-gradient( to right bottom,
+        rgba(69, 125, 247, 0.4),
+        rgba(109, 174, 254, 0.4)),
+    url(../images/projects8.jpg);
+    background-size: cover;
+    }
+}

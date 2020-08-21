@@ -14,6 +14,11 @@ body {
   background-color: #fff;
   line-height: 1.6; }
 
+a::before,
+a::after,
+a::visited {
+  text-decoration: none; }
+
 .container {
   display: grid;
   grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
@@ -263,8 +268,8 @@ body {
 
 .staffs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
   align-self: center; }
 
 .staff {
@@ -287,8 +292,8 @@ body {
     color: #437cf7;
     text-transform: capitalize; }
   .staff__info-box {
-    width: 20rem;
-    height: 25rem;
+    width: 25rem;
+    height: 35rem;
     text-align: center;
     border-radius: .2rem;
     background-color: #fafbfa;
@@ -300,14 +305,59 @@ body {
     .staff__info-box:hover {
       background-color: #e2f0f9; }
 
-.hire-us {
-  background-color: grey;
-  grid-column: full-start / full-end;
+.latest-projects {
+  grid-column: col-start 1 / col-end;
   margin-top: 10rem; }
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem; }
+  .project__box {
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    transition: all .2s; }
+    .project__box:hover {
+      transform: translateY(-0.2rem); }
+  .project__img-box {
+    height: 25rem; }
+  .project__h2 {
+    margin-bottom: 3rem;
+    text-align: center; }
+  .project__img {
+    width: 100%;
+    height: 100%; }
+  .project__heading {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1.5rem 0;
+    background-color: #df4c73;
+    margin-top: -.3rem; }
+  .project__img-1 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects1.jpg);
+    background-size: cover; }
+  .project__img-2 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects2.jpg);
+    background-size: cover; }
+  .project__img-3 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects3.jpg);
+    background-size: cover; }
+  .project__img-4 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects4.jpg);
+    background-size: cover; }
+  .project__img-5 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects5.jpg);
+    background-size: cover; }
+  .project__img-6 {
+    background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects8.jpg);
+    background-size: cover; }
 
 .testimony {
   background-color: green;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  margin-top: 10rem; }
 
 .partners {
   background-color: pink;
