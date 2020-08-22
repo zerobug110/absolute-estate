@@ -14,7 +14,9 @@
         text-decoration: none;
         transition: all .2s;
         
-        &:hover {transform: translateY(-.2rem);}
+        &:hover {
+            transform: translateY(-.2rem);
+        }
     }
 
     &__img-box {height: 25rem;}
@@ -34,7 +36,7 @@
         text-align: center;
         text-transform: capitalize;
         padding: 1.5rem 0;
-        background-color: $color-pink;
+        background-color: $primary-color;
         margin-top: -.3rem;
     }
     

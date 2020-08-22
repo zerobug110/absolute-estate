@@ -1,0 +1,41 @@
+.news {
+    grid-column: col-start 1 / col-end;
+    margin-top: 10rem;
+
+    &__container {
+        font-size: 1.6rem;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+        grid-column-gap: 5rem;
+        grid-row-gap: 7rem;
+    }
+
+    &__img-box {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)), 
+        url(../images/projects9.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30rem;
+        border-radius: .2rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $dark-black;
+        margin-bottom: 1rem;
+    }
+
+    &__h2 {
+        text-align: center;
+    }
+
+    &__paragraph {
+        color: $light-black;
+        margin-bottom: 2rem;
+
+    }
+}

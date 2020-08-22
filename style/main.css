@@ -22,7 +22,7 @@ a::visited {
 .container {
   display: grid;
   grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
-  grid-template-rows: 100vh repeat(4, min-content); }
+  grid-template-rows: 100vh repeat(6, min-content); }
 
 .section-heading {
   color: #437cf7;
@@ -30,6 +30,13 @@ a::visited {
   font-weight: 550;
   text-transform: uppercase;
   margin-top: -1.5rem; }
+
+.btn {
+  background-color: #df4c73;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 2rem; }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.705), rgba(109, 174, 254, 0.705)), url(../images/projects18.jpg);
@@ -95,7 +102,8 @@ a::visited {
   .about__img-box {
     height: 30rem;
     background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.39), rgba(109, 174, 254, 0.39)), url(../images/projects2.jpg);
-    background-size: cover; }
+    background-size: cover;
+    border-radius: .2rem; }
   .about__img {
     width: 100%;
     height: 100%;
@@ -104,12 +112,6 @@ a::visited {
   .about__paragraph {
     color: #666;
     margin-bottom: 2rem; }
-  .about__btn {
-    background-color: #df4c73;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 2rem; }
 
 .services {
   grid-column: col-start 1 / col-end;
@@ -218,10 +220,9 @@ a::visited {
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 15rem; }
   .work__img-box {
-    height: 50rem;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr); }
+    grid-template-rows: repeat(7, 6rem); }
   .work__img-1 {
     width: 100%;
     height: 100%;
@@ -230,7 +231,7 @@ a::visited {
     background-position: center;
     border-radius: .2rem;
     grid-column: 1 / span 2;
-    grid-row: 5 / span 2; }
+    grid-row: 4 / span 3; }
   .work__img-2 {
     width: 100%;
     height: 100%;
@@ -292,7 +293,6 @@ a::visited {
     color: #437cf7;
     text-transform: capitalize; }
   .staff__info-box {
-    width: 25rem;
     height: 35rem;
     text-align: center;
     border-radius: .2rem;
@@ -333,7 +333,7 @@ a::visited {
     text-align: center;
     text-transform: capitalize;
     padding: 1.5rem 0;
-    background-color: #df4c73;
+    background-color: #437cf7;
     margin-top: -.3rem; }
   .project__img-1 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects1.jpg);
@@ -354,14 +354,81 @@ a::visited {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects8.jpg);
     background-size: cover; }
 
-.testimony {
-  background-color: green;
-  grid-column: full-start / full-end;
+.news {
+  grid-column: col-start 1 / col-end;
   margin-top: 10rem; }
+  .news__container {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-column-gap: 5rem;
+    grid-row-gap: 7rem; }
+  .news__img-box {
+    background-image: linear-gradient(rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects9.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    border-radius: .2rem; }
+  .news__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 1rem; }
+  .news__h2 {
+    text-align: center; }
+  .news__paragraph {
+    color: #666;
+    margin-bottom: 2rem; }
+
+.testimony {
+  grid-column: full-start / full-end;
+  background-color: yellow;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem;
+  grid-gap: 5rem; }
+  .testimony__box {
+    grid-column: col-start 3 / col-start 7;
+    margin: 10rem 0;
+    background-color: #df4c73;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3); }
+
+.reviews {
+  font-size: 1.6rem;
+  text-align: center;
+  height: 25rem;
+  padding: 2rem; }
+
+.review__name {
+  font-size: 2rem;
+  font-weight: 250;
+  text-transform: uppercase; }
+
+.review__date {
+  text-transform: capitalize; }
+
+.review__paragraph {
+  color: #fff; }
 
 .partners {
   background-color: pink;
   grid-column: full-start / full-end; }
+  .partners__list {
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+  .partners__logo {
+    grid-column: col-start 1 / col-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 3rem;
+    padding: 5rem 0; }
+  .partners__h2 {
+    text-align: center; }
+
+.google {
+  background-color: red; }
 
 .footer {
   background-color: brown;

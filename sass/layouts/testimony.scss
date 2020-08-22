@@ -1,5 +1,45 @@
-.testimony {
-    background-color: green;   
+.testimony {  
     grid-column: full-start / full-end;
+    background-color: yellow;
     margin-top: 10rem;
+
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+    grid-gap: 5rem;
+    
+    &__box {
+        grid-column: col-start 3 / col-start 7;
+        margin: 10rem 0;
+        background-color: $color-pink;
+        border-radius: .3rem;
+        box-shadow: 0 .1rem .4rem rgba(0,0,0, .3);
+    }
+
 }
+
+.reviews {
+    font-size: 1.6rem;
+    text-align: center;
+    height: 25rem;
+    padding: 2rem;
+    
+
+}
+
+.review {
+
+    &__name {
+        font-size: 2rem;
+        font-weight: 250;
+        text-transform: uppercase;
+    }
+
+    &__date {
+        text-transform: capitalize;
+    }
+
+    &__paragraph {
+        color: $white;
+    }
+}
+
