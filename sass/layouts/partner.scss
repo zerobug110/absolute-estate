@@ -1,17 +1,17 @@
 .partners {
-    background-color: pink;
     grid-column: full-start / full-end;
- 
+    margin-top: 10rem;
     
     &__list {
         display: grid;
         grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+       
     }
 
     &__logo{
         grid-column: col-start 1 / col-end;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 3rem;
         padding: 5rem 0;
     }
@@ -23,5 +23,4 @@
 }
 
 .google {
-    background-color: red;
 }

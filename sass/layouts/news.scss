@@ -11,14 +11,25 @@
         grid-row-gap: 7rem;
     }
 
+    &__img-box--1 {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)), 
+        url(../images/news1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+        border-radius: .2rem;
+    }
+
     &__img-box {
         background-image: linear-gradient(
             rgba(69, 125, 247, 0.4),
             rgba(109, 174, 254, 0.4)), 
-        url(../images/projects9.jpg);
+        url(../images/service7.jpg);
         background-size: cover;
         background-position: center;
-        height: 30rem;
+        height: 35rem;
         border-radius: .2rem;
     }
 

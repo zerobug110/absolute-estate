@@ -12,6 +12,7 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
     align-self: center;
+    border-radius: .3rem;
 }
 .staff { 
     font-size: 1.6rem;
@@ -46,16 +47,30 @@
         height: 35rem;
         text-align: center;
         border-radius: .2rem;
-        background-color: rgb(250, 251, 250);
-        transition: all .2s;
-//        
-        &:hover {
-            background-color: $light-blue;
-        }
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.social-media {
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-icon {
+    border-radius: 50%;
+    fill: $white;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+    background-color: $dark-black;
+    padding: .6rem;
+
+    &:hover {
+        fill: $light-black;
     }
 }

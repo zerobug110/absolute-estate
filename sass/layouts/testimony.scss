@@ -1,28 +1,43 @@
 .testimony {  
     grid-column: full-start / full-end;
-    background-color: yellow;
     margin-top: 10rem;
-
-    display: grid;
-    grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
-    grid-gap: 5rem;
+    background-image: linear-gradient(
+        rgba(69, 125, 247, 0.7),
+        rgba(109, 174, 254, 0.7)),
+    url(../images/happy-family.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
     
-    &__box {
-        grid-column: col-start 3 / col-start 7;
-        margin: 10rem 0;
-        background-color: $color-pink;
-        border-radius: .3rem;
-        box-shadow: 0 .1rem .4rem rgba(0,0,0, .3);
+
+    &__heading {
+        text-align: center;
+        color: $white;
+    }
+
+    &__box{   
+        display: grid;
+        grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+        grid-gap: 5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
     }
 
 }
 
 .reviews {
+    width: 50rem;
+    margin: 3rem ;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: .3rem;
+    box-shadow: 0 .1rem .4rem rgba(0,0,0, .3);
     font-size: 1.6rem;
     text-align: center;
-    height: 25rem;
     padding: 2rem;
-    
 
 }
 
@@ -31,15 +46,50 @@
     &__name {
         font-size: 2rem;
         font-weight: 250;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        color: #000;
     }
 
     &__date {
+        color: #111;
         text-transform: capitalize;
+        font-style: italic;
     }
 
     &__paragraph {
-        color: $white;
+        color: $light-black;
+        position: relative;
     }
 }
 
+.next {
+    position: absolute;
+    top: 20%;
+    right: -7rem;
+    border-radius: 60%;
+
+}
+.slide-icon {
+    width: 4rem;
+    height: 4rem;
+    fill: $color-pink;
+}
+
+.prev {
+    position: absolute;
+    top: 0;
+    left: -9rem;
+    border-radius: 60%;
+}
+
+.prev-icon {
+    width: 7rem;
+    height: 7rem;
+    fill: $color-pink;
+}
+.star-icon {
+    fill: #dda407;
+    width: 2rem;   
+    height: 2rem;
+    margin-top: 1.5rem;
+}
