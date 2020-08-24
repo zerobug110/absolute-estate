@@ -1,15 +1,51 @@
 .footer {
-    background-color: brown;
+    background-color: rgb(12, 83, 134);
     grid-column: full-start / full-end;
 
-    &__box {
-
+    &__box { 
+        display: grid;
+        grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+        margin-top: 2rem;
     }
 
     &__item {
+        grid-column: col-start 1 / col-end;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-gap: 5rem;    
+        list-style: none;
+        text-align: center;
     }
+    &__link {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $white;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-top: 5rem;
+    }
+}
+
+.social-media {
+    margin: 0 auto;
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        fill: $white;
+        border-radius: 50%;
+        margin: 3rem 0 ;
+        
+    }
+}
+
+.copyright {
+    font-size: 1.6rem;
+    color: #111;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
