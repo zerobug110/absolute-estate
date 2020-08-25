@@ -9,6 +9,21 @@
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
 
+.home  {
+    background-image: linear-gradient(to bottom right, 
+    rgba(69, 125, 247, 0.705),
+    rgba(109, 174, 254, 0.705)),
+    url(../images/projects18.jpg); 
+}
+
+.properties {
+    background-image: linear-gradient(to bottom right, 
+    rgba(69, 125, 247, 0.705),
+    rgba(109, 174, 254, 0.705)),
+    url(../images/properties-bg.jpg); 
+    background-position: center;
+}
+
 .nav{
     height: 7rem;
     display: flex;

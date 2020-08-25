@@ -15,35 +15,52 @@
         grid-gap: 5rem;    
         list-style: none;
         text-align: center;
+        
     }
     &__link {
         font-size: 1.6rem;
         text-decoration: none;
         color: $white;
+        &:hover {
+            color: $secondary-color;
+        }
+        
     }
 
-    &__logo-box {
+    &__heading {
         text-align: center;
-        margin-top: 5rem;
+        margin: 5rem 0;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: $secondary-color;
+        font-weight: 300;
+        word-spacing: .5rem;
     }
 }
 
-.social-media {
+.footer-social-media {
     margin: 0 auto;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &__icon {
-        width: 3rem;
-        height: 3rem;
+    &--icon {
+        width: 2.5rem;
+        height: 2.5rem;
         fill: $white;
-        border-radius: 50%;
         margin: 3rem 0 ;
+
+        &:hover {
+            fill: $secondary-color;
+        }
         
     }
 }
 
 .copyright {
     font-size: 1.6rem;
-    color: #111;
+    color: $dark-black;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 5rem;

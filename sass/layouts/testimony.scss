@@ -13,12 +13,13 @@
     &__heading {
         text-align: center;
         color: $white;
+        transform: translateY(-10rem);
     }
 
     &__box{   
         display: grid;
         grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
-        grid-gap: 5rem;
+        grid-gap: 1rem;
 
         display: flex;
         justify-content: center;
@@ -31,7 +32,7 @@
 
 .reviews {
     width: 50rem;
-    margin: 3rem ;
+    margin: rem ;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: .3rem;
     box-shadow: 0 .1rem .4rem rgba(0,0,0, .3);
@@ -63,11 +64,7 @@
 }
 
 .next {
-    position: absolute;
-    top: 20%;
-    right: -7rem;
-    border-radius: 60%;
-
+ margin: 0 .7rem;
 }
 .slide-icon {
     width: 4rem;
@@ -75,12 +72,6 @@
     fill: $color-pink;
 }
 
-.prev {
-    position: absolute;
-    top: 0;
-    left: -9rem;
-    border-radius: 60%;
-}
 
 .prev-icon {
     width: 7rem;

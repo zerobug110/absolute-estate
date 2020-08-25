@@ -38,16 +38,14 @@
 
     &__role {
         font-size: 2rem;
-        color: $primary-color;
+        color: $light-black;
         text-transform: capitalize;
     }
 
     &__info-box {
-
-        height: 35rem;
         text-align: center;
         border-radius: .2rem;
-
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -56,21 +54,22 @@
 }
 
 .social-media {
-    width: 15rem;
+    width: 10rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 .social-icon {
-    border-radius: 50%;
-    fill: $white;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-top: 2rem;
-    background-color: $dark-black;
-    padding: .6rem;
-
+    fill: $secondary-color;
+    width: 2.5rem;
+    height: 2.5rem;
+   margin-top: 2rem;
+   transition: all .2s;
+   
+  
     &:hover {
-        fill: $light-black;
+        fill: $primary-color;
+    
     }
 }

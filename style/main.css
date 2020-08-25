@@ -37,6 +37,8 @@ a::visited {
   text-decoration: none;
   color: #fff;
   border-radius: 2rem; }
+  .btn:hover {
+    background-color: #b43d5c; }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.705), rgba(109, 174, 254, 0.705)), url(../images/projects18.jpg);
@@ -44,6 +46,13 @@ a::visited {
   background-position: top;
   grid-column: full-start / full-end;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+
+.home {
+  background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.705), rgba(109, 174, 254, 0.705)), url(../images/projects18.jpg); }
+
+.properties {
+  background-image: linear-gradient(to bottom right, rgba(69, 125, 247, 0.705), rgba(109, 174, 254, 0.705)), url(../images/properties-bg.jpg);
+  background-position: center; }
 
 .nav {
   height: 7rem;
@@ -218,7 +227,8 @@ a::visited {
   grid-column: col-start 1 / col-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  grid-gap: 15rem; }
+  grid-row-gap: 5rem;
+  grid-column-gap: 15rem; }
   .work__img-box {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -285,37 +295,35 @@ a::visited {
     font-size: 2rem;
     font-weight: 550;
     text-transform: uppercase;
-    color: #555;
+    color: #222;
     margin-top: 1rem; }
   .staff__role {
     font-size: 2rem;
-    color: #437cf7;
+    color: #666;
     text-transform: capitalize; }
   .staff__info-box {
-    height: 35rem;
     text-align: center;
     border-radius: .2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
 .social-media {
-  width: 15rem;
+  width: 10rem;
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
 .social-icon {
-  border-radius: 50%;
-  fill: #fff;
-  width: 3.5rem;
-  height: 3.5rem;
+  fill: #6daffe;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-top: 2rem;
-  background-color: #555;
-  padding: .6rem; }
+  transition: all .2s; }
   .social-icon:hover {
-    fill: #666; }
+    fill: #437cf7; }
 
 .latest-projects {
   grid-column: col-start 1 / col-end;
@@ -391,7 +399,7 @@ a::visited {
   .news__heading {
     font-size: 2rem;
     text-transform: uppercase;
-    color: #555;
+    color: #222;
     margin-bottom: 1rem; }
   .news__h2 {
     text-align: center; }
@@ -408,18 +416,19 @@ a::visited {
   padding: 15rem 0; }
   .testimony__heading {
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    transform: translateY(-10rem); }
   .testimony__box {
     display: grid;
     grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem;
-    grid-gap: 5rem;
+    grid-gap: 1rem;
     display: flex;
     justify-content: center;
     align-items: center; }
 
 .reviews {
   width: 50rem;
-  margin: 3rem;
+  margin: rem;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: .3rem;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
@@ -443,21 +452,12 @@ a::visited {
   position: relative; }
 
 .next {
-  position: absolute;
-  top: 20%;
-  right: -7rem;
-  border-radius: 60%; }
+  margin: 0 .7rem; }
 
 .slide-icon {
   width: 4rem;
   height: 4rem;
   fill: #df4c73; }
-
-.prev {
-  position: absolute;
-  top: 0;
-  left: -9rem;
-  border-radius: 60%; }
 
 .prev-icon {
   width: 7rem;
@@ -472,16 +472,18 @@ a::visited {
 
 .partners {
   grid-column: full-start / full-end;
-  margin-top: 10rem; }
+  margin: 10rem 0; }
   .partners__list {
     display: grid;
     grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
   .partners__logo {
     grid-column: col-start 1 / col-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 3rem;
-    padding: 5rem 0; }
+    padding-top: 5rem; }
+    .partners__logo-img {
+      justify-self: center; }
   .partners__h2 {
     text-align: center; }
 
@@ -503,22 +505,34 @@ a::visited {
     font-size: 1.6rem;
     text-decoration: none;
     color: #fff; }
-  .footer__logo-box {
+    .footer__link:hover {
+      color: #6daffe; }
+  .footer__heading {
     text-align: center;
-    margin-top: 5rem; }
+    margin: 5rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #6daffe;
+    font-weight: 300;
+    word-spacing: .5rem; }
 
-.social-media {
-  margin: 0 auto; }
-  .social-media__icon {
-    width: 3rem;
-    height: 3rem;
+.footer-social-media {
+  margin: 0 auto;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-social-media--icon {
+    width: 2.5rem;
+    height: 2.5rem;
     fill: #fff;
-    border-radius: 50%;
     margin: 3rem 0; }
+    .footer-social-media--icon:hover {
+      fill: #6daffe; }
 
 .copyright {
   font-size: 1.6rem;
-  color: #111;
+  color: #222;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 5rem; }

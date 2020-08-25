@@ -4,4 +4,8 @@
     text-decoration: none;
     color: $white;
     border-radius: 2rem;
+
+    &:hover {
+        background-color: #b43d5c;
+    }
 }

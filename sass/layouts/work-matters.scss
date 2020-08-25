@@ -18,7 +18,8 @@
     
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-gap: 15rem;
+    grid-row-gap: 5rem;
+    grid-column-gap: 15rem;
 
     &__img-box {
         display: grid;
