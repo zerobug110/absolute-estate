@@ -81,13 +81,13 @@ a::visited {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  color: #fff; }
 
 .main-heading {
-  color: #fff;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4); }
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.6); }
 
 .primary-heading {
   display: block;
@@ -96,9 +96,8 @@ a::visited {
   word-spacing: 1.5rem; }
 
 .sub-heading {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 550;
-  color: #fff;
   word-spacing: .2rem; }
 
 .about {
@@ -329,25 +328,25 @@ a::visited {
   grid-column: col-start 1 / col-end;
   margin-top: 10rem; }
 
-.project {
+.latest-project {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 3rem; }
-  .project__box {
+  .latest-project__box {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
     text-decoration: none;
     transition: all .2s; }
-    .project__box:hover {
+    .latest-project__box:hover {
       transform: translateY(-0.2rem); }
-  .project__img-box {
+  .latest-project__img-box {
     height: 25rem; }
-  .project__h2 {
+  .latest-project__h2 {
     margin-bottom: 3rem;
     text-align: center; }
-  .project__img {
+  .latest-project__img {
     width: 100%;
     height: 100%; }
-  .project__heading {
+  .latest-project__heading {
     font-size: 2rem;
     color: #fff;
     text-align: center;
@@ -355,22 +354,22 @@ a::visited {
     padding: 1.5rem 0;
     background-color: #6daffe;
     margin-top: -.3rem; }
-  .project__img-1 {
+  .latest-project__img-1 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects1.jpg);
     background-size: cover; }
-  .project__img-2 {
+  .latest-project__img-2 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects2.jpg);
     background-size: cover; }
-  .project__img-3 {
+  .latest-project__img-3 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects3.jpg);
     background-size: cover; }
-  .project__img-4 {
+  .latest-project__img-4 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects4.jpg);
     background-size: cover; }
-  .project__img-5 {
+  .latest-project__img-5 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects5.jpg);
     background-size: cover; }
-  .project__img-6 {
+  .latest-project__img-6 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects8.jpg);
     background-size: cover; }
 
@@ -486,6 +485,59 @@ a::visited {
       justify-self: center; }
   .partners__h2 {
     text-align: center; }
+
+.projects {
+  grid-column: col-start 1 / col-end;
+  margin: 10rem 0; }
+  .projects__h2 {
+    text-align: center; }
+  .projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem;
+    margin-top: 3rem; }
+
+.project {
+  background-color: #6daffe;
+  border-radius: .2rem; }
+  .project__info {
+    padding: 1rem; }
+  .project__img-box {
+    height: 25rem; }
+  .project__img {
+    width: 100%;
+    height: 100%;
+    border-radius: .2rem; }
+  .project__icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem; }
+  .project__icon {
+    fill: #fff;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem; }
+  .project__name {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center; }
+
+.contacts {
+  grid-column: col-start 1 / col-end;
+  background-color: yellow;
+  margin: 10rem 0; }
+  .contacts__h2 {
+    text-align: center; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 5rem;
+  margin-top: 3rem; }
 
 .footer {
   background-color: #0c5386;

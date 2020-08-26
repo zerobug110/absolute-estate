@@ -1,0 +1,63 @@
+.projects {
+    grid-column: col-start 1 / col-end;
+    margin: 10rem 0;
+
+    &__h2 {
+        text-align: center;
+       
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 5rem;
+
+        margin-top: 3rem;
+    }
+
+}
+
+.project {
+    background-color: $secondary-color;
+    border-radius: .2rem;
+
+    &__info {
+        padding: 1rem;
+
+    }
+
+    &__img-box {
+        height: 25rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: .2rem;
+    }
+
+
+    &__icons {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20rem;
+    }
+    
+    &__icon {
+        fill: $white;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__name {
+        font-size: 2rem;
+        color: $white;
+        font-weight: 300;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+

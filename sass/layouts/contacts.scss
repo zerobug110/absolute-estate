@@ -1,0 +1,18 @@
+.contacts {
+    grid-column: col-start 1 / col-end;
+    background-color: yellow;
+    margin: 10rem 0;
+
+
+    &__h2 {
+        text-align: center;
+    }
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 5rem;
+
+    margin-top: 3rem;
+}
