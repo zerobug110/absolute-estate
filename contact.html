@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body class="container">
-    <header class="header properties">
+    <header class="header contacts-bk">
         <div class="nav">
             <div class="nav__logo">
                 <img src="" alt="logo" class="logo-img">
@@ -15,9 +15,9 @@
             <div class="nav__items">
                 <ul class="nav__list">
                     <li class="nav__link"><a href="index.html">home</a></li>
-                    <li class="nav__link"><a href="">properties</a></li>
-                    <li class="nav__link"><a href="">contacts</a></li>
-                    <li class="nav__link"><a href="">news</a></li>
+                    <li class="nav__link"><a href="properties.html">properties</a></li>
+                    <li class="nav__link"><a href="contact.html">contacts</a></li>
+                    <li class="nav__link"><a href="news.html">news</a></li>
                 </ul>
             </div>    
         </div>
@@ -32,22 +32,50 @@
         <div class="section-heading contacts__h2">contacts</div>
         <div class="contact">
             <div class="location">
-                location
+                <svg class="contact-icon">
+                    <use xlink:href = "images/sprite.svg#icon-location"></use>
+                </svg>
+                <address class="address">kololi 19<sup>th</sup> street, banjul the gambia</address>
             </div>
             <div class="telephone">
-                12243555
+                <svg class="contact-icon">
+                    <use xlink:href ="images/sprite.svg#icon-phone"></use>
+                </svg>
+                <p>+220 3202829 / +220 793898</p>
             </div>
             <div class="media-icons">
-                social media
+                <h3 class="social-heading">follow us on</h3>
+                <div class="contact-media">
+                    <a href="">
+                        <svg class="contact-social-media--icon">
+                            <use xlink:href ="images/sprite.svg#icon-linkedin2"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="contact-social-media--icon">
+                            <use xlink:href ="images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="contact-social-media--icon">
+                            <use xlink:href ="images/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="form">
-        
+        <form class="form">
+            <h3 class="form__heading">let's talk</h3>
+            <input type="text" name="text" id="" placeholder="Full name" required>
+            <input type="email" name="email" id="" placeholder="Email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="What's your message" class="textarea" required></textarea>
+            <input type="submit" value="Send" class="submit">
+        </form>
     </section>
 
+
     <footer class="footer">
-        <h3 class="footer__heading">&#128512; absolute estate makes you feel at home &#128512;</h3>
+        <h3 class="footer__heading">absolute estate makes you feel at home</h3>
         <div class="footer__box">
             <ul class="footer__item">
                 <li><a href="" class="footer__link"> terms and services</a></li>
@@ -74,9 +102,12 @@
             </a>
         </div>
         <p class="copyright">
-            copy right &copy;2020.
+            copy right &copy;2020
         </p>
     </footer>
+     <!--DIDICATE THIS WEB DESIGN TO MY LOVELY GRANDMA WHO PASSED AWAY RIGHT AFTER I COMPLETED THIS SITE
+     MY ALLAH GRANT HER THE HIGHTEST PLACE IN JANNAH "MBINKO" 26th-8-2020 -->
+
 
 </body>
 </html>

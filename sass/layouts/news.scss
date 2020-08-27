@@ -11,6 +11,17 @@
         grid-row-gap: 7rem;
     }
 
+    &__img-box {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)), 
+        url(../images/service7.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+        border-radius: .2rem;
+    }
+
     &__img-box--1 {
         background-image: linear-gradient(
             rgba(69, 125, 247, 0.4),
@@ -21,12 +32,22 @@
         height: 35rem;
         border-radius: .2rem;
     }
-
-    &__img-box {
+    &__img-box--2 {
         background-image: linear-gradient(
             rgba(69, 125, 247, 0.4),
             rgba(109, 174, 254, 0.4)), 
-        url(../images/service7.jpg);
+        url(../images/projects7.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+        border-radius: .2rem;
+    }
+
+    &__img-box--3 {
+        background-image: linear-gradient(
+            rgba(69, 125, 247, 0.4),
+            rgba(109, 174, 254, 0.4)), 
+        url(../images/news1.jpg);
         background-size: cover;
         background-position: center;
         height: 35rem;
@@ -49,4 +70,8 @@
         margin-bottom: 2rem;
 
     }
+}
+
+.last {
+ margin-bottom: 10rem;
 }

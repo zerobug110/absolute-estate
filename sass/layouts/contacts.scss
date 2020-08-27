@@ -1,11 +1,11 @@
 .contacts {
-    grid-column: col-start 1 / col-end;
-    background-color: yellow;
-    margin: 10rem 0;
+    grid-column: col-start 1 / col-end;   
+    margin-top: 10rem;
 
 
     &__h2 {
         text-align: center;
+        
     }
 }
 
@@ -13,6 +13,102 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 5rem;
-
+    text-align: center;
     margin-top: 3rem;
+}
+
+.location {
+    font-size: 1.6rem;
+    color: $dark-black;
+    text-transform: capitalize;
+}
+
+.telephone {
+    font-size: 1.6rem;
+    color: $dark-black;
+    text-transform: capitalize;
+}
+
+.contact-icon {
+    fill: $secondary-color;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-media {
+    margin: 1rem auto;
+    width: 13rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-social-media--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $light-black;
+}
+
+.social-heading {
+    font-size: 2rem;
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.form {
+    font-size: 1.6rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40rem;
+    width: 50rem;
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 300;
+        color: $color-pink;
+        margin-bottom: 3rem;
+    }
+    & input:not(:last-child) {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        height: 4rem;
+        padding-left: 1rem;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        border-radius: .2rem;
+        box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .5);
+    }
+}
+
+.textarea {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: #eee;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .5);
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+
+
+.submit {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: $color-pink;
+    border: none;
+    outline: none;
+    border-radius: .2rem;
+    height: 4rem;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .5);
+    cursor: pointer;
+ 
 }

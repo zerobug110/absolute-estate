@@ -1,8 +1,4 @@
 .header {
-    background-image: linear-gradient(to bottom right, 
-        rgba(69, 125, 247, 0.705),
-        rgba(109, 174, 254, 0.705)),
-        url(../images/projects18.jpg); 
     background-size: cover;
     background-position: top;
     grid-column: full-start / full-end;
@@ -13,7 +9,7 @@
     background-image: linear-gradient(to bottom right, 
     rgba(69, 125, 247, 0.705),
     rgba(109, 174, 254, 0.705)),
-    url(../images/projects18.jpg); 
+    url(../images/projects17.jpg); 
 }
 
 .properties {
@@ -21,6 +17,22 @@
     rgba(69, 125, 247, 0.705),
     rgba(109, 174, 254, 0.705)),
     url(../images/properties-bg.jpg); 
+    background-position: center;
+}
+
+.contacts-bk {
+    background-image: linear-gradient(to bottom right, 
+    rgba(69, 125, 247, 0.705),
+    rgba(109, 174, 254, 0.705)),
+    url(../images/projects18.jpg); 
+    background-position: center;
+}
+
+.news-bk {
+    background-image: linear-gradient(to bottom right, 
+    rgba(69, 125, 247, 0.705),
+    rgba(109, 174, 254, 0.705)),
+    url(../images/projects3.jpg); 
     background-position: center;
 }
 

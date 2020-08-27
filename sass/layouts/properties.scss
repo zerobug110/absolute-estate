@@ -10,7 +10,7 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-gap: 5rem;
+        grid-gap: 3rem;
 
         margin-top: 3rem;
     }
@@ -23,11 +23,18 @@
 
     &__info {
         padding: 1rem;
+       
+    }
 
+    &__location {
+        font-size: 1.6rem;
+        display: flex;
+        color: $white;
+        text-transform: capitalize;
     }
 
     &__img-box {
-        height: 25rem;
+        height: 24rem;
     }
 
     &__img {
@@ -42,22 +49,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 20rem;
+      
+        padding: 0 2rem;
     }
     
     &__icon {
         fill: $white;
         width: 3rem;
         height: 3rem;
-        margin-bottom: 1rem;
+        transform: translateX(-1rem);
     }
 
-    &__name {
-        font-size: 2rem;
-        color: $white;
-        font-weight: 300;
-        text-transform: capitalize;
-        text-align: center;
-    }
 }
 
