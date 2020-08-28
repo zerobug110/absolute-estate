@@ -20,6 +20,7 @@
 .project {
     background-color: $secondary-color;
     border-radius: .2rem;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0, .7);
 
     &__info {
         padding: 1rem;
@@ -35,6 +36,7 @@
 
     &__img-box {
         height: 24rem;
+        
     }
 
     &__img {

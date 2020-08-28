@@ -15,13 +15,14 @@
         url(../images/projects2.jpg); 
         background-size: cover;
         border-radius: .2rem;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0, .7);
     }
 
     &__img {
         width: 100%;
         height: 100%;
         border-radius: .2rem;
-        box-shadow: 0 .3rem .4rem 0 rgba(0,0,0, .2);
+        border-radius: .5rem;
     }
 
     &__text-box {
