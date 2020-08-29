@@ -79,3 +79,21 @@
 .last {
  margin-bottom: 10rem;
 }
+
+.clock {
+
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $secondary-color;
+    }
+}
+
+.time-post {
+    margin: -1.5rem -1rem 1rem 0;
+    width: 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888;
+}
