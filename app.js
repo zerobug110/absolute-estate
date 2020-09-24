@@ -1,3 +1,15 @@
+                                //nav slider
+//select variable
+
+const navList = document.querySelector('.nav__list');
+const navToggle = document.querySelector('.lines');
+
+navToggle.addEventListener('click', ()=> {
+    navList.classList.toggle('show');    
+});
+
+                        // review slider 
+//review items
 const reviews = [
 
     {
@@ -84,14 +96,3 @@ prev.addEventListener('click', (event) => {
     }
     showPerson();
 });
-
-const filter = document.querySelector('.filter');
-const filterList = document.querySelector('.filter__list');
-
-filterList.addEventListener('click', ()=> {
-    
-});
-
-
-
-
