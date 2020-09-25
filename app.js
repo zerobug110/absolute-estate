@@ -61,7 +61,7 @@ let currentItem = 0;
 //load initial item
 window.addEventListener('DOMContentLoaded', ()=>{
     //console.log('window loaded');
-    showPerson(currentItem)
+    showPerson(currentItem);
 });
 
 //show person base on item 
@@ -96,3 +96,4 @@ prev.addEventListener('click', (event) => {
     }
     showPerson();
 });
+
