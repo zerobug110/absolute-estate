@@ -95,7 +95,7 @@ a::visited {
     display: flex;
     justify-content: space-between;
     list-style: none; }
-    @media screen and (max-width: 75rem) {
+    @media screen and (max-width: 56.25em) {
       .nav__list {
         flex-direction: column;
         text-align: center;
@@ -127,7 +127,7 @@ a::visited {
   flex-direction: column;
   z-index: 10;
   display: none; }
-  @media screen and (max-width: 75rem) {
+  @media screen and (max-width: 56.25em) {
     .lines {
       display: block; } }
   .lines > * {

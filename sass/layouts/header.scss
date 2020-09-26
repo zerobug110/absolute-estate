@@ -60,7 +60,7 @@
     &__items {
         color: $white;
         display: flex;
-        @include respond (tab-land) {
+        @include respond (tab-port) {
             
         }
     }
@@ -74,7 +74,7 @@
         
 
 
-        @include respond (tab-land) {
+        @include respond (tab-port) {
             flex-direction: column;
             text-align: center;
             justify-content: space-evenly;
@@ -117,7 +117,7 @@
     z-index: 10;
     display: none;
 
-    @include respond (tab-land) {
+    @include respond (tab-port) {
         display: block;
     }
 

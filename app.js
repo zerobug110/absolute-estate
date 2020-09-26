@@ -8,6 +8,13 @@ navToggle.addEventListener('click', ()=> {
     navList.classList.toggle('show');    
 });
 
+//generate the current date
+
+const currentDate = document.getElementById('current-date');
+
+currentDate.innerHTML = new Date().getFullYear();
+
+
                         // review slider 
 //review items
 const reviews = [
@@ -39,7 +46,7 @@ const reviews = [
     {
         id: 3,
         name: 'Fatou Secka',
-        date: ' 20 Feb 2020',
+        date: ' 10 jan 2020',
         description: 'finally got my dream house', 
         text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem adipisci ab impedit ut error nostrum quo mollitia dolorum veniam, saepe harum laboriosam placeat expedita doloremque vitae itaque rem est?a',
         
@@ -48,7 +55,7 @@ const reviews = [
 
 //select items
 const name = document.querySelector('.review__name');
-const date = document.querySelector('.review__date');
+const reviewDate = document.querySelector('.review__date');
 const  description = document.querySelector('.figcaption');
 const text = document.querySelector('.review__paragraph');
 
@@ -69,7 +76,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 let showPerson = () => { 
     const item = reviews[currentItem];
     name.textContent = item.name;
-    date.textContent = item.date;
+    reviewDate.textContent = item.date;
     description.textContent = item.description;
     text.textContent = item.text;
 }
@@ -96,4 +103,7 @@ prev.addEventListener('click', (event) => {
     }
     showPerson();
 });
+
+
+
 
