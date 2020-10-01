@@ -406,13 +406,15 @@ a::visited {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 3rem; }
   .latest-project__box {
-    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
     text-decoration: none;
     transition: all .2s; }
     .latest-project__box:hover {
       transform: translateY(-0.2rem); }
   .latest-project__img-box {
-    height: 25rem; }
+    height: 24rem;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem; }
   .latest-project__h2 {
     margin-bottom: 3rem;
     text-align: center; }
@@ -421,12 +423,15 @@ a::visited {
     height: 100%; }
   .latest-project__heading {
     font-size: 2rem;
+    font-weight: 500;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     background-color: #6daffe;
-    margin-top: -.3rem; }
+    margin-top: -.3rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem; }
   .latest-project__img-1 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0.4), rgba(109, 174, 254, 0.4)), url(../images/projects1.jpg);
     background-size: cover; }
