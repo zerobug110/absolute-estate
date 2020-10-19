@@ -103,7 +103,3 @@ prev.addEventListener('click', (event) => {
     }
     showPerson();
 });
-
-
-
-

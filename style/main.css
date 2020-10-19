@@ -110,7 +110,10 @@ a::visited {
   .nav__link a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    transition: all .3s; }
+    .nav__link a:hover {
+      font-weight: 600; }
 
 .show {
   height: 40rem;
