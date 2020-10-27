@@ -637,6 +637,8 @@ a::visited {
     color: #df4c73; }
     .filter__list:hover {
       color: #437cf7; }
+    .filter__list:active {
+      color: #437cf7; }
 
 .project {
   background-color: #6daffe;
