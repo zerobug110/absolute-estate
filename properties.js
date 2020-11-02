@@ -45,7 +45,7 @@ const properties = [
     {
         id: 7,
         location: 'brikama',
-        area: 9423,
+        area: 423,
         img: 'https://cdn.pixabay.com/photo/2016/07/25/17/11/new-home-1540889__340.jpg',
         category: 'rent',
     },
@@ -66,7 +66,7 @@ const properties = [
     {
         id: 10,
         location: 'kololi',
-        area: 2000,
+        area: 600,
         img: 'https://cdn.pixabay.com/photo/2018/01/08/16/02/house-3069655__340.jpg',
         category: 'buy',
     },
@@ -115,7 +115,7 @@ const properties = [
     {
         id: 17,
         location: 'foni',
-        area: 1123,
+        area: 423,
         img: 'https://cdn.pixabay.com/photo/2016/09/14/16/38/new-home-1669789__340.jpg',
         category: 'rent',
     },
