@@ -1,3 +1,7 @@
+//active strict mode
+'use strict';
+
+
 //items
 const properties = [
     {
@@ -147,6 +151,7 @@ filterBtns.forEach( btn => {
         const propertyCategory = properties.filter( (propertyItems) => {
             if(propertyItems.category === category) {
                 return propertyItems;
+
             }
                         
         });
