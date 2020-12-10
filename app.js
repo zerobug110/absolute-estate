@@ -24,7 +24,7 @@ const reviews = [
         name: 'Buba Ceesay',
         date: ' 15 Feb 2020',
         description: 'got my house with 24hr of buying',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis inventore dicta aliquid reiciendis, neque quaerat velit maxime perspiciatis, sapiente reprehenderit nesciunt unde earum. Dolorem voluptatem fuga rerum et perferendis.'
+        text: 'this is the best car repair shope in the country their work is perfect and is the best anyone can get just hit em up and they will get ur car running as soon as possible with any worry. and i am rocking and rolling with breakdown'
     }, 
 
     {
@@ -32,7 +32,7 @@ const reviews = [
         name: 'Ousman Touray',
         date: ' 20 sep 2020',
         description: 'cheap amazing luxury homes',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio aspernatur earum, vel suscipit dolore, nisi obcaecati eligendi saepe, est temporibus dolorem rerum nobis. Praesentium distinctio necessitatibus dolores neque eveniet.'
+        text: 'i got my car wrap and it has been 6 years now and my color is amazing and has not got a single pill of. redeye really gor an eye for beauty. this is my sixth time wrapping my car but with redeye is the best ever'
     },
 
     {
@@ -40,15 +40,15 @@ const reviews = [
         name: 'Abdou Janneh',
         date: ' 10 jan 2020',
         description: 'very easy to work with',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sunt assumenda impedit illum aut veritatis quas error eaque voluptatum! Error a, consequatur laborum necessitatibus consectetur quas quam amet magnam ad.'
+        text: 'redeye is definitely the best i upgraded my interior and engine the leather seats i had installed are still in good condition and they increase my engine power by 30ph and the lighting is still as bright as new. checkout redeye for ur car repair'
     },
 
     {
         id: 3,
         name: 'Fatou Secka',
         date: ' 10 jan 2020',
-        description: 'finally got my dream house', 
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem adipisci ab impedit ut error nostrum quo mollitia dolorum veniam, saepe harum laboriosam placeat expedita doloremque vitae itaque rem est?a',
+        description: 'finally got my dream car', 
+        text: 'My parents used this car for 10 years and it was giving my problems for the past 4 yeas till i finally got in contact with redeye and it is the best decision to have ever made  because after they repair and maintenance my car. my car is unbreakable',
         
     }
 ];
