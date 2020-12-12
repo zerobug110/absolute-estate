@@ -24,7 +24,7 @@ const reviews = [
         name: 'Buba Ceesay',
         date: ' 15 Feb 2020',
         description: 'got my house with 24hr of buying',
-        text: 'this is the best car repair shope in the country their work is perfect and is the best anyone can get just hit em up and they will get ur car running as soon as possible with any worry. and i am rocking and rolling with breakdown'
+        text: 'I bought a 7 bedroom mansion in less than 24 hours. i was planning on buy a house last summer after checking few real estate website it was difficult to fine a 7 bedroom in duplex. after a week i found absolute estate and but a 7 bedroom in less than 24 hours just sign few documents and made the payment'
     }, 
 
     {
@@ -32,7 +32,7 @@ const reviews = [
         name: 'Ousman Touray',
         date: ' 20 sep 2020',
         description: 'cheap amazing luxury homes',
-        text: 'i got my car wrap and it has been 6 years now and my color is amazing and has not got a single pill of. redeye really gor an eye for beauty. this is my sixth time wrapping my car but with redeye is the best ever'
+        text: 'i have grown up alway moving form one house to another, my parents never had their own house. I was alway dreaming of getting my own house some day. after 20 years my dream has come true all thanks to absolute estate for giving me flexible payment plan'
     },
 
     {
@@ -40,15 +40,15 @@ const reviews = [
         name: 'Abdou Janneh',
         date: ' 10 jan 2020',
         description: 'very easy to work with',
-        text: 'redeye is definitely the best i upgraded my interior and engine the leather seats i had installed are still in good condition and they increase my engine power by 30ph and the lighting is still as bright as new. checkout redeye for ur car repair'
+        text: 'i have rented in absolute estate apartments for the last seven years it pretty easy all the tenders are well responsible people and the environment is super quite and all problem that i have get fixed as soon as possible with quality use all around the house '
     },
 
     {
         id: 3,
         name: 'Fatou Secka',
         date: ' 10 jan 2020',
-        description: 'finally got my dream car', 
-        text: 'My parents used this car for 10 years and it was giving my problems for the past 4 yeas till i finally got in contact with redeye and it is the best decision to have ever made  because after they repair and maintenance my car. my car is unbreakable',
+        description: 'The project span is quick', 
+        text: 'I have many encounters with different real estate companies and all of them never finished they project in time. when they gave me a contract time of 5 months to complete my store building but to my surprise just one month before our contract end i got house keys fully finished',
         
     }
 ];
