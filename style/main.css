@@ -91,7 +91,7 @@ a::visited {
     display: flex; }
   .nav__list {
     font-size: 1.6rem;
-    width: 35rem;
+    width: 40rem;
     display: flex;
     justify-content: space-between;
     list-style: none; }
