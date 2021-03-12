@@ -26,3 +26,17 @@ print(arr)
 
 print(type(arr))
 print(type(msg))
+
+#function in python
+def hello():
+    return "hello"
+
+print(hello)
+
+#multi line comment
+
+"""
+first comment
+second comment
+third comment
+"""
