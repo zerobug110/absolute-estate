@@ -14,13 +14,13 @@ print(msg);
 
 print(len(msg));
 
-# obj = {
-#     name = "muhammed",
-#     last = "bojang",
-#     age = 27,
-#     address = "kerr serign"
-# }
-# print(obj)
+obj = {
+    name = "muhammed",
+    last = "bojang",
+    age = 27,
+    address = "kerr serign"
+}
+print(obj)
 arr = ['muhammed', 20]
 print(arr)
 
