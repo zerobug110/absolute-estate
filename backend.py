@@ -52,14 +52,41 @@ third comment
 """
 # input to let the user reply similar to scanner on java
 
-name = input('what is your name? ')
+# name = input('what is your name? ')
 
-color = input('what is your favorite color ')
+# color = input('what is your favorite color ')
 
-print(name + ' likes ' + color )
+# print(name + ' likes ' + color )
 
 
 #TYPE CONVERSIONS
 
-3550 bakaramo
-6900 mom
+# weight_lb = input('what is your weight in pound? ')
+
+# weight_kg =  int(weight_lb) * 0.45359237
+
+# print(weight_kg)
+
+
+#STRING
+
+#BREAKING WORDS 
+'''
+HI, MUHAMMED HOW ARE YOU DOING?
+I REALLY MISS YOU 
+FROM YOUR FRIEND OUSMAN
+'''
+
+#FORMATED STRING just like string literal in js
+
+name = 'Muhammed'
+last_name = 'Bojang'
+
+message = first + ' [' + last_name + '] ' + 'is a coder'
+print(message)
+
+#correct
+
+msg = f'{first} [{last_name}] is a coder'
+
+print(msg)k
