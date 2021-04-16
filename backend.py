@@ -88,5 +88,47 @@ print(message)
 #correct
 
 msg = f'{first} [{last_name}] is a coder'
+print(name.upper(), last_name.upper())
 
-print(msg)k
+#STRING METHODS
+course = 'python course for beginers'
+
+print(course.upper())
+print(course.lower())
+print(course.find('b'))
+print(course.replace('beginers', 'newbies'))
+print('python' in course)
+
+#ARITHMETIC 
+print(3 + 2)
+print(3 *2)
+print(5 / 2) # will return float number (with decimal)
+print(5 // 2) # will return int (round them)
+print(3 % 2) # will return remainder
+print(3 ** 2) # power
+
+x = 10
+x = x + 3
+x += 3 # same as the above equation
+print(x)
+
+
+#MATH FUNCTION
+import math
+y = 3 - 2
+print(round(y)) # round it up
+print(abs(-2.39)) # return positive number instead of negative
+print(math.ceil(3.4))
+
+
+# IF ELSE  STATEMENT
+ 
+is_cold = False
+is_hot = False
+
+if is_cold:
+     print('wear warm cloth')
+elif is_hot:
+    print('drink plenty of water.')
+else:
+    print('enjoy your day')
