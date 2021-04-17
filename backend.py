@@ -132,3 +132,39 @@ elif is_hot:
     print('drink plenty of water.')
 else:
     print('enjoy your day')
+
+
+has_credit =  True
+has_criminal_record = True
+
+if has_credit and not has_criminal_record:
+    print('You are eligible for load')
+else:
+    print("we're. you're not eligible for a load")
+
+input_name = 'muhammed'
+
+if len(input_name) > 5:
+    print('name is too long')
+
+
+
+weight = int(input('weight: '))
+unit = input('(L)bs or (k)g ')
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"you are {converted} kilos")
+else:
+    print(f"you are {converted} pounds")
+
+
+
+#LOOPS
+
+#While loop
+
+i = 1
+while 1 <= 5:
+    print(i)
+    i = i + 1
+print('done')
