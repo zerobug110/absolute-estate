@@ -79,94 +79,118 @@ FROM YOUR FRIEND OUSMAN
 
 #FORMATED STRING just like string literal in js
 
-name = 'Muhammed'
-last_name = 'Bojang'
+# name = 'Muhammed'
+# last_name = 'Bojang'
 
-message = first + ' [' + last_name + '] ' + 'is a coder'
-print(message)
+# message = first + ' [' + last_name + '] ' + 'is a coder'
+# print(message)
 
-#correct
+# #correct
 
-msg = f'{first} [{last_name}] is a coder'
-print(name.upper(), last_name.upper())
+# msg = f'{first} [{last_name}] is a coder'
+# print(name.upper(), last_name.upper())
 
-#STRING METHODS
-course = 'python course for beginers'
+# #STRING METHODS
+# course = 'python course for beginers'
 
-print(course.upper())
-print(course.lower())
-print(course.find('b'))
-print(course.replace('beginers', 'newbies'))
-print('python' in course)
+# print(course.upper())
+# print(course.lower())
+# print(course.find('b'))
+# print(course.replace('beginers', 'newbies'))
+# print('python' in course)
 
-#ARITHMETIC 
-print(3 + 2)
-print(3 *2)
-print(5 / 2) # will return float number (with decimal)
-print(5 // 2) # will return int (round them)
-print(3 % 2) # will return remainder
-print(3 ** 2) # power
+# #ARITHMETIC 
+# print(3 + 2)
+# print(3 *2)
+# print(5 / 2) # will return float number (with decimal)
+# print(5 // 2) # will return int (round them)
+# print(3 % 2) # will return remainder
+# print(3 ** 2) # power
 
-x = 10
-x = x + 3
-x += 3 # same as the above equation
-print(x)
-
-
-#MATH FUNCTION
-import math
-y = 3 - 2
-print(round(y)) # round it up
-print(abs(-2.39)) # return positive number instead of negative
-print(math.ceil(3.4))
+# x = 10
+# x = x + 3
+# x += 3 # same as the above equation
+# print(x)
 
 
-# IF ELSE  STATEMENT
+# #MATH FUNCTION
+# import math
+# y = 3 - 2
+# print(round(y)) # round it up
+# print(abs(-2.39)) # return positive number instead of negative
+# print(math.ceil(3.4))
+
+
+# # IF ELSE  STATEMENT
  
-is_cold = False
-is_hot = False
+# is_cold = False
+# is_hot = False
 
-if is_cold:
-     print('wear warm cloth')
-elif is_hot:
-    print('drink plenty of water.')
-else:
-    print('enjoy your day')
-
-
-has_credit =  True
-has_criminal_record = True
-
-if has_credit and not has_criminal_record:
-    print('You are eligible for load')
-else:
-    print("we're. you're not eligible for a load")
-
-input_name = 'muhammed'
-
-if len(input_name) > 5:
-    print('name is too long')
+# if is_cold:
+#      print('wear warm cloth')
+# elif is_hot:
+#     print('drink plenty of water.')
+# else:
+#     print('enjoy your day')
 
 
+# has_credit =  True
+# has_criminal_record = True
 
-weight = int(input('weight: '))
-unit = input('(L)bs or (k)g ')
-if unit.upper() == "L":
-    converted = weight * 0.45
-    print(f"you are {converted} kilos")
-else:
-    print(f"you are {converted} pounds")
+# if has_credit and not has_criminal_record:
+#     print('You are eligible for load')
+# else:
+#     print("we're. you're not eligible for a load")
+
+# input_name = 'muhammed'
+
+# if len(input_name) > 5:
+#     print('name is too long')
+
+
+
+# weight = int(input('weight: '))
+# unit = input('(L)bs or (k)g ')
+# if unit.upper() == "L":
+#     converted = weight * 0.45
+#     print(f"you are {converted} kilos")
+# else:
+#     print(f"you are {converted} pounds")
 
 
 
 #LOOPS
 
 #While loop
+# i = 1
+# while i <= 15:
+#     print('*' * i)
+#     i = i + 1
+# print('done')
 
-i = 1
-while 1 <= 5:
-    print(i)
-    i = i + 1
-print('done')
+    #while loop game
+
+# secret_number = 9
+# guess_count = 0
+# guess_limit = 3
+
+# while guess_count < guess_limit:
+#     guess = int(input('guess: '))
+#     guess_count =+ 1
+#     if guess == secret_number:
+#         print('you won')
+#         break
+# else:
+#     print('sorry you failed')
+
+user = print(input(''))
+help = 'help'
+if input == help:
+   print('''
+    start - to start
+    stop - to stop
+    quit - to exit
+    ''')
+
 
 #for loop
