@@ -183,14 +183,21 @@ FROM YOUR FRIEND OUSMAN
 # else:
 #     print('sorry you failed')
 
-user = print(input(''))
-help = 'help'
-if input == help:
-   print('''
-    start - to start
-    stop - to stop
-    quit - to exit
-    ''')
 
 
 #for loop
+
+for item in ['Benz', 'AMG', 'G-Wagon', '12 Cylinder', 300000 ]:
+    print(item)
+
+for numbs in range(10): #range(5, 10)  range(2, 20, 2)
+    print(numbs)
+
+prices = [10, 20, 30]
+total = 0
+
+for price in prices:
+    total += price
+print(f'total price is {total}')
+
+
