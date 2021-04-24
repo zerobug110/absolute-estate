@@ -200,4 +200,4 @@ for price in prices:
     total += price
 print(f'total price is {total}')
 
-
+#array
