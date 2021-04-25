@@ -200,4 +200,48 @@ for price in prices:
     total += price
 print(f'total price is {total}')
 
-#array
+#rectangler array of numbers
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+print(matrix[0][1])
+
+for row in matrix:
+    for item in row:
+        print(item)
+
+#list of numbers
+number = [1,2,3,4,5,6,7,8,9]
+
+number.append(23) #to add to the list
+number.insert(2, 'hi') #to add in the middle of the list
+number.remove('hi') #to remove item
+number.count(1) #count the number of times it appear on the list
+number.sort() # to sort items assending order
+number.reverse() # to sort in  decending order
+number2 = number.copy() #to make a copy of the original list
+number.pop() # to remove the last item
+number.clear() #to remove all the items
+print(number)
+
+
+#exercise program to remove duplicate number in a list
+
+exercise1 = [1,2,4,5,7,2,1,8,9,2,4,6,8,3]
+for item in exercise1:
+    if exercise1.count(item) >= 1:
+        exercise1.remove(item)
+        print(exercise1)
+
+#correction
+
+
+exercise_correction = [1,2,4,5,7,2,1,8,9,2,4,6,8,3]
+unique = []
+for number in exercise_correction:
+    if number not in unique:
+        unique.append(number)
+print(unique)
