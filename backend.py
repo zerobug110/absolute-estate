@@ -245,3 +245,14 @@ for number in exercise_correction:
     if number not in unique:
         unique.append(number)
 print(unique)
+
+#functions
+def user_information(first_name, last_name):
+    print(f'hi {first_name} {last_name} welcome')
+    print('welcome')
+print(user_information('Muhammed', 'Bojang'))
+
+#return statement
+def square(number):
+    return number * number
+print(square(3))
